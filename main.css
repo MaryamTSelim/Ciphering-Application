@@ -1,0 +1,109 @@
+* {
+    background-color: whitesmoke;
+    margin: 0%;
+}
+
+h1 {
+    text-align: center;
+    margin: 15px;
+    padding: 5px;
+}
+
+section {
+    margin: 5px auto;
+    padding: 15px;
+    width: 80%;
+    height: 500px;
+    box-shadow: 0px 0px 5px black;
+    background-color: white;
+}
+
+
+#original {
+    width: 40%;
+    box-sizing: border-box;
+    margin: 5%;
+    float: left;
+    box-shadow: none;
+    border: 2px solid dimgray;
+    position: relative;
+
+
+
+}
+
+#original h3 {
+    color: whitesmoke;
+    background-color: maroon;
+    text-align: center;
+    padding: 10px;
+    margin: 0%;
+    border-bottom: 2px solid dimgray;
+
+}
+
+#original textarea {
+    width: 100%;
+    height: 200px;
+    margin: 0%;
+    padding: 0%;
+    border: none;
+}
+
+#ciphered {
+    width: 40%;
+    float: left;
+    margin: 5%;
+    box-sizing: border-box;
+    box-shadow: none;
+    border: 2px solid dimgray;
+    position: relative;
+}
+
+#ciphered h3 {
+    color: whitesmoke;
+    background-color: seagreen;
+    text-align: center;
+    padding: 10px;
+    margin: 0%;
+    border-bottom: 2px solid dimgray;
+
+}
+
+#ciphered textarea {
+    width: 100%;
+    height: 200px;
+    margin: 0%;
+    padding: 0%;
+    border: none;
+}
+
+#controls {
+    clear: both;
+    width: 60%;
+    box-sizing: border-box;
+    margin: 5% auto;
+    background-color: white;
+    
+}
+select , button ,input[type='text']{
+    border:1px solid dimgray;
+    padding :5px;
+    margin: 5px;
+}
+input[type='text']{
+    width:150px;
+}
+#enc{
+    color: black;
+    background-color: lightgreen;
+    float: right;
+}
+#dec{
+    color: black;
+    background-color: lightcoral;
+    float: right;
+}
+button:hover , select:hover , input[type='text']:hover{
+    box-shadow: 0px 0px 5px dimgray;
+}
