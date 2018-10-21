@@ -42,12 +42,13 @@ section {
 
 }
 
-#original textarea {
+textarea {
     width: 100%;
     height: 200px;
     margin: 0%;
     padding: 0%;
     border: none;
+    resize: none;
 }
 
 #ciphered {
@@ -70,13 +71,6 @@ section {
 
 }
 
-#ciphered textarea {
-    width: 100%;
-    height: 200px;
-    margin: 0%;
-    padding: 0%;
-    border: none;
-}
 
 #controls {
     clear: both;
