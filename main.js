@@ -14,6 +14,8 @@ window.addEventListener('load', function (e) {
             cipheredTxt.value = playFair1dEncryption(matrixCreation(key.value), playFairEditingInput(originalTxt.value));
         } else if (cihperingMethod.value == "playfair 2D") {
             cipheredTxt.value = playFair2dEncryption(matrixCreation(key.value), playFairEditingInput(originalTxt.value));
+        } else if (cihperingMethod.value == "des") {
+            cipheredTxt.value = des(originalTxt.value.split(" ").join(""),key.value.split(" ").join(""));
         }
     }, false);
 
