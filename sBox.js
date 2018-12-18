@@ -33,9 +33,7 @@ function sBox(input, round) {
                 colNumber += Math.pow(2, i)
             }
         }
-        console.log(rowNumber + "     " + colNumber)
         let sBoxresult = sBoxes[i % 5][rowNumber * 16 + colNumber]
-        console.log(sBoxresult)
         rightAfterSBOX += sBoxresult
     }
     return rightAfterSBOX;

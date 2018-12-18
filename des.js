@@ -3,11 +3,11 @@ function des(input, key) {
     //Key Generation
     console.log("Generate Key")
     let keyModified = keyModification(key);
-    let roundKeys = KeyGenerator(keyModified.join(""));
+    let roundKeys = keyGenerator(keyModified.join(""));
     console.log("Finished Generation of Key")
     //Initial Of Permutation
     console.log("permuting input")
-    let permutedInput = permutationOfInput(input,1);
+    let permutedInput = permutationOfInput(input, 1);
     console.log("Finished permuting input")
     //Dividing Input
     console.log("Dividing Input")
@@ -19,16 +19,16 @@ function des(input, key) {
         let inputRightExpanded = expandRightInput(inputRight);
         let inputRightXorroundKey = xor(inputRightExpanded, roundKeys[rounds]);
         console.log("\t" + inputRightExpanded);
-        console.log("\t"+roundKeys[rounds].split(""))
-        console.log("\t"+inputRightXorroundKey);
-        let rightAfterSBOX = sBox(inputRightXorroundKey,rounds);
-        let rightXoredWithLeft = xor(rightAfterSBOX,inputLeft);
+        console.log("\t" + roundKeys[rounds].split(""))
+        console.log("\t" + inputRightXorroundKey);
+        let rightAfterSBOX = sBox(inputRightXorroundKey, rounds);
+        let rightXoredWithLeft = xor(rightAfterSBOX, inputLeft);
         inputLeft = inputRight;
         inputRight = rightXoredWithLeft;
     }
     //swap
     let output = inputRight.concat(inputLeft);
     console.log(output)
-    cipheredtxt = permutationOfInput(output,0)
+    cipheredtxt = permutationOfInput(output, 0)
     return cipheredtxt.join("");
 }

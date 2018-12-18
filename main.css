@@ -1,5 +1,5 @@
 * {
-    background-color: whitesmoke;
+    background-color: dimgray;
     margin: 0%;
 }
 
@@ -7,6 +7,7 @@ h1 {
     text-align: center;
     margin: 15px;
     padding: 5px;
+    color: whitesmoke;
 }
 
 section {
@@ -14,8 +15,8 @@ section {
     padding: 15px;
     width: 80%;
     height: 500px;
-    box-shadow: 0px 0px 5px black;
-    background-color: white;
+    box-shadow: 0px 0px 5px #7777f211;
+    background-color: whitesmoke;
 }
 
 
@@ -43,12 +44,14 @@ section {
 }
 
 textarea {
+    box-sizing: border-box;
     width: 100%;
     height: 200px;
     margin: 0%;
-    padding: 0%;
+    padding: 5px;
     border: none;
     resize: none;
+    background-color: whitesmoke;
 }
 
 #ciphered {
@@ -63,7 +66,7 @@ textarea {
 
 #ciphered h3 {
     color: whitesmoke;
-    background-color:lightgreen;
+    background-color: lightgreen;
     text-align: center;
     padding: 10px;
     margin: 0%;
@@ -77,27 +80,37 @@ textarea {
     width: 60%;
     box-sizing: border-box;
     margin: 5% auto;
-    background-color: white;
-    
+    background-color: whitesmoke;
 }
-select , button ,input[type='text']{
-    border:1px solid dimgray;
-    padding :5px;
+
+select,
+button,
+input[type='text'],
+option {
+    border: 1px solid dimgray;
+    padding: 5px;
     margin: 5px;
+    background-color: whitesmoke;
 }
-input[type='text']{
-    width:150px;
+
+input[type='text'] {
+    width: 150px;
 }
-#enc{
+
+#enc {
     color: black;
     background-color: lightgreen;
     float: right;
 }
-#dec{
+
+#dec {
     color: black;
     background-color: lightcoral;
     float: right;
 }
-button:hover , select:hover , input[type='text']:hover{
+
+button:hover,
+select:hover,
+input[type='text']:hover {
     box-shadow: 0px 0px 5px dimgray;
 }

@@ -1,4 +1,4 @@
-function KeyGenerator(key) {
+function keyGenerator(key) {
     let roundKeys = [];
     let left = key.substring(0, key.length / 2).toString();
     let right = key.substring(key.length / 2).toString();
@@ -17,6 +17,6 @@ function KeyGenerator(key) {
         right = rightnew;
 
     }
-    
+
     return roundKeys;
 }

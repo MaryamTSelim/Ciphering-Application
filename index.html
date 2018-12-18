@@ -1,66 +1,75 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Enc|Dec</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="main.js"></script>
-    <!--Caesar Encryption And Decryption-->
-    <script src="caesarCipherEncrypt.js"></script>
-    <script src="caesarCipherDecrypt.js"></script>
-    <!--Play Fair-->
-    <script src="matrixCreation.js"></script>
-    <script src="playFairEditingInput.js"></script>
-    <script src="playFair1dEncryption.js"></script>
-    <script src="playFair2dEncryption.js"></script>
-    <!--DES-->
-    <script src="des.js"></script>
-    <script src="KeyGenerator.js"></script>
-    <script src="keyModification.js"></script>
-    <script src="permutationOfInput.js"></script>
-    <script src="expandRightInput.js"></script>
-    <script src="xor.js"></script>
-    <script src="sBox.js"></script>
-
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Enc|Dec</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+  <script src="main.js"></script>
+  <!-- Caesar Encryption And Decryption -->
+  <script src="caesarCipherEncrypt.js"></script>
+  <script src="caesarCipherDecrypt.js"></script>
+  <!-- Play Fair -->
+  <script src="matrixCreation.js"></script>
+  <script src="playFairEditingInput.js"></script>
+  <script src="playFair1dEncryption.js"></script>
+  <script src="playFair2dEncryption.js"></script>
+  <script src="playFairDecryption.js"></script>
+  <!-- DES -->
+  <script src="des.js"></script>
+  <script src="keyGenerator.js"></script>
+  <script src="keyModification.js"></script>
+  <script src="permutationOfInput.js"></script>
+  <script src="expandRightInput.js"></script>
+  <script src="xor.js"></script>
+  <script src="sBox.js"></script>
+  <script src="modifiedDES.js"></script>
+  <script src="toInteger.js"></script>
+  <!-- RC4 -->
+  <script src="RC4Encryption.js"></script>
+  <script src="RC4Decryption.js"></script>
+  <script src="sCreationAndPermutation.js"></script>
+  <script src="kGeneration.js"></script>
+  <!-- RSA -->
+  <script src="RSAEncryption.js"></script>
+  <script src="RSADecryption.js"></script>
+  <script src="RSAKeyGeneration.js"></script>
+  <script src="isPrime.js"></script>
 </head>
 
 <body>
-    <header>
-        <h1>
-            Encryption | Decryption
-        </h1>
-        <!-- <button id="toggle">Dark</button> -->
-    </header>
-    <section>
-        <div id="original">
-            <h3>Original Text</h3>
-            <textarea></textarea>
-        </div>
+  <header>
+    <h1>Encryption | Decryption</h1>
+  </header>
+  <section>
+    <div id="original">
+      <h3>Original Text</h3>
+      <textarea></textarea>
+    </div>
 
-        <div id="ciphered">
-            <h3>Ciphered Text</h3>
-            <textarea></textarea>
-        </div>
+    <div id="ciphered">
+      <h3>Ciphered Text</h3>
+      <textarea></textarea>
+    </div>
 
-        <div id="controls">
-            <select name="encMethods">
-                <option value="Encryption Method">Encryption Method</option>
-                <option value="caesarcipher">Caesar Cipher</option>
-                <option value="playfair 1D">Play Fair 1D</option>
-                <option value="playfair 2D">Play Fair 2D</option>
-                <option value="des">DES</option> 
-            </select>
-            <button id="enc">Encryption</button>
-            <br />
-            <input type="text" placeholder="Key"/>
-            <button id="dec">Decryption</button>
-        </div>
-
-
-    </section>
+    <div id="controls">
+      <select name="encMethods">
+        <option value="Encryption Method">Encryption Method</option>
+        <option value="caesarcipher">Caesar Cipher</option>
+        <option value="playfair 1D">Play Fair 1D</option>
+        <option value="playfair 2D">Play Fair 2D</option>
+        <option value="des">DES</option>
+        <option value="mdes">Modified DES</option>
+        <option value="RC4">RC4</option>
+        <option value="RSA">RSA</option>
+      </select>
+      <button id="enc">Encryption</button> <br />
+      <input type="text" placeholder="Key" />
+      <button id="dec">Decryption</button>
+    </div>
+  </section>
 </body>
 
 </html>
